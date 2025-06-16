@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  sqli-safe-version:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=development
+      - PYTHONUNBUFFERED=1
